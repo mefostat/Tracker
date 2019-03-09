@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/tvToken"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/coordination"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="14dp"
+            android:textSize="18dp"
+            android:text="Ваш токен:" />
+
+    <TextView
+        android:id="@+id/outSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tvToken"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="1dp"
+        android:layout_marginBottom="3dp"
+        android:text="Settings" />
+
+
+    <TextView
+        android:id="@+id/coordination"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="19dp"
+        android:layout_marginBottom="101dp"
+
+        android:text="Координаты:" />
+    <View
+        android:id="@+id/view2"
+        android:layout_width="wrap_content"
+        android:layout_height="3dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="40dp"
+        android:background="@color/bordercolor"/>
+
+    <TextView
+        android:id="@+id/TvRez"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="61dp"
+        android:layout_marginEnd="-267dp"
+        android:layout_toStartOf="@+id/textView4"
+        android:text="Ваше местоположение:"
+        android:textSize="15dp"
+
+        />
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_above="@+id/webbrowser"
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="129dp"
+        android:layout_marginEnd="293dp"
+        android:layout_marginBottom="-150dp"
+        android:text="Карта:"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="22dp"
+        android:autoLink="web"
+        android:linksClickable="true"
+        android:text="http://track.e-geron.ru/index.php" />
+
+    <WebView
+        android:id="@+id/webbrowser"
+        android:layout_width="322dp"
+        android:layout_height="226dp"
+        android:layout_above="@+id/textView4"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginBottom="95dp" />
+
+
+</RelativeLayout>
+
+
+
+
+
